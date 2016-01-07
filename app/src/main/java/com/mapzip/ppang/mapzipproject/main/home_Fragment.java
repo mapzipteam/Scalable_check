@@ -370,12 +370,12 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                 scalableLayout.setScale_TextSize(EunPhung, 150);
 
                 //서대문
-                ScalableLayout.LayoutParams layoutParams2 = new ScalableLayout.LayoutParams(1600, 1900, 700f, 500f);
+                ScalableLayout.LayoutParams layoutParams2 = new ScalableLayout.LayoutParams(1650, 1900, 700f, 500f);
                 SuDaeMon.setLayoutParams(layoutParams2);//scalableLayout.addView(SuDaeMon, layoutParams2);
                 scalableLayout.setScale_TextSize(SuDaeMon, 150);
 
                 //종로
-                ScalableLayout.LayoutParams layoutParams3 = new ScalableLayout.LayoutParams(2000, 1700, 700f, 500f);
+                ScalableLayout.LayoutParams layoutParams3 = new ScalableLayout.LayoutParams(2050, 1700, 700f, 500f);
                 ZongRo.setLayoutParams(layoutParams3);//scalableLayout.addView(ZongRo, layoutParams3);
                 scalableLayout.setScale_TextSize(ZongRo, 150);
 
@@ -392,17 +392,100 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
 
 
 
+                //도봉
+                ScalableLayout.LayoutParams layoutParams6 = new ScalableLayout.LayoutParams(2750, 500, 700f, 500f);
+                DoBong.setLayoutParams(layoutParams6);//scalableLayout.addView(DoBong, layoutParams6);
+                scalableLayout.setScale_TextSize(DoBong, 150);
+
+                //노원
+                ScalableLayout.LayoutParams layoutParams7 = new ScalableLayout.LayoutParams(3200, 1000, 700f, 500f);
+                NoWon.setLayoutParams(layoutParams7);//scalableLayout.addView(NoWon, layoutParams7);
+                scalableLayout.setScale_TextSize(NoWon, 150);
+
+                //중랑
+                ScalableLayout.LayoutParams layoutParams8 = new ScalableLayout.LayoutParams(3400, 1600, 700f, 500f);
+                ZongRang.setLayoutParams(layoutParams8);//scalableLayout.addView(ZongRang, layoutParams8);
+                scalableLayout.setScale_TextSize(ZongRang, 150);
+
+                //동대문
+                ScalableLayout.LayoutParams layoutParams9 = new ScalableLayout.LayoutParams(3000, 1900, 700f, 500f);
+                DongDaeMon.setLayoutParams(layoutParams9);//scalableLayout.addView(DongDaeMon, layoutParams9);
+                scalableLayout.setScale_TextSize(DongDaeMon, 150);
+
+                //강서
+                ScalableLayout.LayoutParams layoutParams10 = new ScalableLayout.LayoutParams(390, 2150, 700f, 500f);
+                GangSue.setLayoutParams(layoutParams10);//scalableLayout.addView(GangSue, layoutParams10);
+                scalableLayout.setScale_TextSize(GangSue, 150);
+
+
+
+
+                ///////////////////////
+                //양천
+                ScalableLayout.LayoutParams layoutParams11 = new ScalableLayout.LayoutParams(700, 2850, 700f, 500f);
+                YangChen.setLayoutParams(layoutParams11);//scalableLayout.addView(YangChen, layoutParams11);
+                scalableLayout.setScale_TextSize(YangChen, 150);
+
+                //구로
+                ScalableLayout.LayoutParams layoutParams12 = new ScalableLayout.LayoutParams(600, 3350, 700f, 500f);
+                GuRo.setLayoutParams(layoutParams12);//scalableLayout.addView(GuRo, layoutParams12);
+                scalableLayout.setScale_TextSize(GuRo, 150);
+
+                //금천
+                ScalableLayout.LayoutParams layoutParams13 = new ScalableLayout.LayoutParams(1200, 3800, 700f, 500f);
+                GemChun.setLayoutParams(layoutParams13);//scalableLayout.addView(GemChun, layoutParams13);
+                scalableLayout.setScale_TextSize(GemChun, 150);
+
+                //마포
+                ScalableLayout.LayoutParams layoutParams14 = new ScalableLayout.LayoutParams(1400, 2350, 700f, 500f);
+                MaPho.setLayoutParams(layoutParams14);//scalableLayout.addView(MaPho, layoutParams14);
+                scalableLayout.setScale_TextSize(MaPho, 150);
+
+                //영등포
+                ScalableLayout.LayoutParams layoutParams15 = new ScalableLayout.LayoutParams(1350, 2900, 700f, 500f);
+                YongDengPo.setLayoutParams(layoutParams15);//scalableLayout.addView(YongDengPo, layoutParams15);
+                scalableLayout.setScale_TextSize(YongDengPo, 150);
+
+
+
+
+                /////////////////////////
+                //관악
+                ScalableLayout.LayoutParams layoutParams16 = new ScalableLayout.LayoutParams(1750, 3800, 700f, 500f);
+                GanAk.setLayoutParams(layoutParams16);//scalableLayout.addView(GanAk, layoutParams16);
+                scalableLayout.setScale_TextSize(GanAk, 150);
+
+                //동작
+                ScalableLayout.LayoutParams layoutParams17 = new ScalableLayout.LayoutParams(1800, 3150, 700f, 500f);
+                DongJack.setLayoutParams(layoutParams17);//scalableLayout.addView(DongJack, layoutParams17);
+                scalableLayout.setScale_TextSize(DongJack, 150);
+
+                //용산
+                ScalableLayout.LayoutParams layoutParams18 = new ScalableLayout.LayoutParams(2150, 2650, 700f, 500f);
+                YongSan.setLayoutParams(layoutParams18);//scalableLayout.addView(YongSan, layoutParams18);
+                scalableLayout.setScale_TextSize(YongSan, 150);
+
+                //중구
+                ScalableLayout.LayoutParams layoutParams19 = new ScalableLayout.LayoutParams(2300, 2200, 700f, 500f);
+                Zhong.setLayoutParams(layoutParams19);//scalableLayout.addView(Zhong, layoutParams19);
+                scalableLayout.setScale_TextSize(Zhong, 150);
+
+                //성동
+                ScalableLayout.LayoutParams layoutParams20 = new ScalableLayout.LayoutParams(2800, 2400, 700f, 500f);
+                SungDong.setLayoutParams(layoutParams20);//scalableLayout.addView(SungDong, layoutParams20);
+                scalableLayout.setScale_TextSize(SungDong, 150);
+
 
 
 
                 //////////////////////////////////
                 //서초
-                ScalableLayout.LayoutParams layoutParams21 = new ScalableLayout.LayoutParams(2400, 3200, 700f, 500f);
+                ScalableLayout.LayoutParams layoutParams21 = new ScalableLayout.LayoutParams(2450, 3500, 700f, 500f);
                 SeoCho.setLayoutParams(layoutParams21);//scalableLayout.addView(SeoCho, layoutParams21);
                 scalableLayout.setScale_TextSize(SeoCho, 150);
 
                 //강남
-                ScalableLayout.LayoutParams layoutParams22 = new ScalableLayout.LayoutParams(2900, 3000, 700f, 500f);
+                ScalableLayout.LayoutParams layoutParams22 = new ScalableLayout.LayoutParams(2950, 3250, 700f, 500f);
                 GangNam.setLayoutParams(layoutParams22);//scalableLayout.addView(GangNam, layoutParams22);
                 scalableLayout.setScale_TextSize(GangNam, 150);
 
@@ -420,7 +503,6 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                 ScalableLayout.LayoutParams layoutParams25 = new ScalableLayout.LayoutParams(4000, 2300, 700f, 500f);
                 GangDong.setLayoutParams(layoutParams25);//scalableLayout.addView(GangDong, layoutParams25);
                 scalableLayout.setScale_TextSize(GangDong, 150);
-
 
 
             }
