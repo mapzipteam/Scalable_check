@@ -4,6 +4,8 @@ package com.mapzip.ppang.mapzipproject.main;
 import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -100,6 +102,9 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
     private Button GangNam;
     private Button SongPa;
 
+
+    private ScalableLayout scalableLayout;
+
     public home_Fragment() {
     }
 
@@ -140,6 +145,9 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
         topstate.append(user.getUserID());
         topstate.append(")");*/
         //  topstate.append("의 지도");
+
+        scalableLayout = (ScalableLayout) v.findViewById(R.id.scalablelayout);
+
 
         imageview = (ImageView) v.findViewById(R.id.mapimage);
         hashstate = (TextView) v.findViewById(R.id.tagText);
@@ -197,7 +205,13 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                     mapid = mapmeta.get("map_id").toString();
 
                     Bitmap result = user.getResult(Integer.parseInt(mapid));
-                    imageview.setImageBitmap(result);
+//2016.01.08        imageview.setImageBitmap(result);
+                    imageview.setEnabled(false);
+                    Drawable drawable = new BitmapDrawable(result);
+                    scalableLayout.setBackground(drawable);
+                    //scalableLayout.setBackground(new BitmapDrawable(getActivity().getResources(), result));
+
+
 
                     // category select (SEOUL)
                     if (Integer.parseInt(mapmeta.get("category").toString()) == SystemMain.SEOUL_MAP_NUM) {
@@ -264,19 +278,19 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                 imageview.getLocationOnScreen(location);
 
 //김민정이 코드
-//                ScreenSize();
-//
-//                Log.e("Display size : ", "" + realWidth);
-//                Log.e("Display size : ", "" + realHeight);
-//                Log.e("check brand", "BRAND = " + Build.BRAND);
-//                if (Build.BRAND.equals("lge")) {
-//                    Log.e("check", "ok");
-//                    fix_x = 47;
-//                    fix_y = -40-(realHeight/18);
-//                } else {
-//                    fix_y=-(realHeight/13)-(realHeight/400); //17~18
-//                    Log.e("check", "No");
-//                }
+                ScreenSize();
+
+                Log.e("Display size : ", "" + realWidth);
+                Log.e("Display size : ", "" + realHeight);
+                Log.e("check brand", "BRAND = " + Build.BRAND);
+                if (Build.BRAND.equals("lge")) {
+                    Log.e("check", "ok");
+                    fix_x = 47;
+                    fix_y = -40-(realHeight/18);
+                } else {
+                    fix_y=-(realHeight/13)-(realHeight/400); //17~18
+                    Log.e("check", "No");
+                }
 //                RelativeLayout.LayoutParams layoutParms1 = new RelativeLayout.LayoutParams(90, 90); // width, height
 //                layoutParms1.setMargins((realWidth / 100 * 33) + fix_x, realHeight / 100 * 36 + fix_y, 0, 0); // left, top, 0, 0
 //                EunPhung.setLayoutParams(layoutParms1);
@@ -361,7 +375,7 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
 //                Log.e("owl", "" + imageview.getHeight());
 
 
-                ScalableLayout scalableLayout = (ScalableLayout) getActivity().findViewById(R.id.scalablelayout);
+               // ScalableLayout scalableLayout = (ScalableLayout) getActivity().findViewById(R.id.scalablelayout);
 
 
                 //은평
