@@ -102,7 +102,7 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
     private Button GangNam;
     private Button SongPa;
 
-
+//송지워니추가함
     private ScalableLayout scalableLayout;
 
     public home_Fragment() {
@@ -145,7 +145,7 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
         topstate.append(user.getUserID());
         topstate.append(")");*/
         //  topstate.append("의 지도");
-
+//송지워니추가함
         scalableLayout = (ScalableLayout) v.findViewById(R.id.scalablelayout);
 
 
@@ -203,7 +203,7 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                     mapcurname = sppinerList.get(position);
                     mapkindnum = mapmeta.get("category").toString();
                     mapid = mapmeta.get("map_id").toString();
-
+//송지워니추가함
                     Bitmap result = user.getResult(Integer.parseInt(mapid));
 //2016.01.08        imageview.setImageBitmap(result);
                     imageview.setEnabled(false);
@@ -291,6 +291,7 @@ public class home_Fragment extends Fragment implements View.OnClickListener {
                     fix_y=-(realHeight/13)-(realHeight/400); //17~18
                     Log.e("check", "No");
                 }
+//송지워니추가함
 //                RelativeLayout.LayoutParams layoutParms1 = new RelativeLayout.LayoutParams(90, 90); // width, height
 //                layoutParms1.setMargins((realWidth / 100 * 33) + fix_x, realHeight / 100 * 36 + fix_y, 0, 0); // left, top, 0, 0
 //                EunPhung.setLayoutParams(layoutParms1);
